@@ -8,13 +8,8 @@ public abstract class Algoritmos {
 		int n1 = 0;
 		int n2 = 1;
 		for (int i = 1; i < n; i++) {
-
-
-			// primero sumamos
 			suma = n1 + n2;
-			// Despues, cambiamos la segunda variable por la primera
 			n1 = n2;
-			// Por ultimo, cambiamos la suma por la segunda variable
 			n2 = suma;
 
 		}
@@ -26,6 +21,15 @@ public abstract class Algoritmos {
 		for (int x=2;x<=n;x++) factorial = factorial * x;
 		return factorial;
 		
+	}
+	
+	public static boolean primo(int n) {
+		if (n%2==0) return false;
+	    for(int i=3;i*i<=n;i+=2) {
+	        if(n%i==0)
+	            return false;
+	    }
+	    return true;
 	}
 
 }
