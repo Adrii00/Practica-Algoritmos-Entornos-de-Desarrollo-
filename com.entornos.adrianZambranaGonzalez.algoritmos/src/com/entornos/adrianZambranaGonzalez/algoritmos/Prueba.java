@@ -1,5 +1,14 @@
 package com.entornos.adrianZambranaGonzalez.algoritmos;
-
+/**
+ * Clase main de prueba para calcular los resultados de distintos algoritmos
+ * a partir de un numero
+ * 
+ * 
+ * @version 1.0
+ * 
+ * @author Adrian_Zambrana
+ *
+ */
 public class Prueba {
 
 	public static void main(String[] args) {
