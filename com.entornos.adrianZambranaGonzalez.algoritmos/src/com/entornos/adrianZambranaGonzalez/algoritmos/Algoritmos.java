@@ -20,5 +20,12 @@ public abstract class Algoritmos {
 		}
 		return suma;
 	}
+	
+	public static int factorial(int n) {
+		int factorial = 1;
+		for (int x=2;x<=n;x++) factorial = factorial * x;
+		return factorial;
+		
+	}
 
 }
