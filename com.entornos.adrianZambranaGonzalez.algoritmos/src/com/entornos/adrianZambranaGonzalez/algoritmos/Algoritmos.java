@@ -19,7 +19,7 @@ public abstract class Algoritmos {
 	 * 
 	 * @return el numero de fibonacci de ese numero
 	 */
-	public static int fibonacci(int n) {
+	public static long fibonacci(int n) {
 		
 
 		int suma = 1;
@@ -39,7 +39,7 @@ public abstract class Algoritmos {
 	 * @return el factorial de un numero
 	 */
 	
-	public static int factorial(int n) {
+	public static long factorial(int n) {
 		
 		int factorial = 1;
 		for (int x=2;x<=n;x++) factorial = factorial * x;
