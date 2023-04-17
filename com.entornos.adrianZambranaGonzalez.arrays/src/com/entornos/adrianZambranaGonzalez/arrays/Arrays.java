@@ -14,23 +14,19 @@ package com.entornos.adrianZambranaGonzalez.arrays;
 public abstract class Arrays {
 	
 	/**
-	 * Metodo fibonacci que recibe por parametro un numero, y devuelve el numero
-	 * de fibonacci de ese numero
+	 * Metodo media que recibe por parametro un array de enteros, y devuelve la media
+	 * de los valores de los elementos del array
 	 * 
 	 * @return el numero de fibonacci de ese numero
+	 * @param un array de numeros enteros
 	 */
-	public static long fibonacci(int n) {
+	public static double media(int[] array) {
 		
-
-		int suma = 1;
-		int n1 = 0;
-		int n2 = 1;
-		for (int i = 1; i < n; i++) {
-			suma = n1 + n2;
-			n1 = n2;
-			n2 = suma;
+		double suma=0;
+		for(int i =0; i<array.length;i++) {
+			suma+=array[i];
 		}
-		return suma;
+		return suma/array.length;
 	}
 	/**
 	 * Metodo factorial que recibe por parametro un numero, y devuelve el factorial
