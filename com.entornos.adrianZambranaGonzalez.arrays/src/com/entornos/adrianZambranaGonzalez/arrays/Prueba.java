@@ -4,9 +4,9 @@ public class Prueba {
 
 	public static void main(String[] args) {
 		
-		int[] array1= {7,8,9,5,4,6,7,2};
+		int[] array1= new int[]{7,8,9,5,4,6,7,2};
 		
-		System.out.println(Arrays.media(array1));
+		System.out.println(MisArrays.media(array1));
 
 	}
 

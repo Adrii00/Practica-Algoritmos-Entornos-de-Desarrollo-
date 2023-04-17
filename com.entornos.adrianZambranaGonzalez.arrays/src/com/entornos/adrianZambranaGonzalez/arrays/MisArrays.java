@@ -11,14 +11,14 @@ package com.entornos.adrianZambranaGonzalez.arrays;
  *
  */
 
-public abstract class Arrays {
+public abstract class MisArrays {
 	
 	/**
 	 * Metodo media que recibe por parametro un array de enteros, y devuelve la media
 	 * de los valores de los elementos del array
-	 * 
-	 * @return el numero de fibonacci de ese numero
 	 * @param un array de numeros enteros
+	 * @return la media de ese array de numeros
+	 * 
 	 */
 	public static double media(int[] array) {
 		
