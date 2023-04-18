@@ -16,7 +16,7 @@ public abstract class MisArrays {
 	/**
 	 * Metodo media que recibe por parametro un array de enteros, y devuelve la media
 	 * de los valores de los elementos del array
-	 * @param un array de numeros enteros
+	 * @param int[]
 	 * @return la media de ese array de numeros
 	 * 
 	 */
@@ -30,7 +30,7 @@ public abstract class MisArrays {
 	}
 	/**
 	 * Metodo mediana que recibe por parametro un array, y devuelve la mediana de dicho array
-	 * @param un array de numeros enteros
+	 * @param int[]
 	 * @return la mediana de ese array
 	 */
 	
@@ -50,7 +50,7 @@ public abstract class MisArrays {
 	/**
 	 * Metodo maximo que recibe por parametro un array de numeros, y devuelve el valor 
 	 * maximo del array
-	 * @param un array de numeros enteros
+	 * @param int[]
 	 * @return el maximo de ese array
 	 */
 	
@@ -69,7 +69,7 @@ public abstract class MisArrays {
 	/**
 	 * Metodo minimo que recibe por parametro un array de numeros, y devuelve el valor 
 	 * minimo del array
-	 * @param un array de numeros enteros
+	 * @param int[]
 	 * @return el minimo de ese array
 	 */
 	
