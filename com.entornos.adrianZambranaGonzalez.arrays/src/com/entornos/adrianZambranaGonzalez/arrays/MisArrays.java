@@ -48,21 +48,40 @@ public abstract class MisArrays {
 	}
 
 	/**
-	 * Metodo primo que recibe por parametro un numero, y devuelve true si es primo
-	 * y false si no lo es
-	 * 
-	 * @return si un numero es primo
+	 * Metodo maximo que recibe por parametro un array de numeros, y devuelve el valor 
+	 * maximo del array
+	 * @param un array de numeros enteros
+	 * @return el maximo de ese array
 	 */
 	
-	public static boolean primo(int n) {
+	public static int maximo(int[] array) {
 		
-		if (n%2==0) return false;
-	    for(int i=3;i*i<=n;i+=2) {
-	        if(n%i==0)
-	            return false;
-	    }
-	    return true;
+		int mayor = array[0];
+		 
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > mayor) {
+                mayor = array[i];
+            }
+        }
+        return mayor;
 	}
 	
-
+	/**
+	 * Metodo minimo que recibe por parametro un array de numeros, y devuelve el valor 
+	 * minimo del array
+	 * @param un array de numeros enteros
+	 * @return el minimo de ese array
+	 */
+	
+	public static int minimo(int[] array) {
+		
+		int minimo = array[0];
+		 
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < minimo) {
+                minimo = array[i];
+            }
+        }
+        return minimo;
+	}
 }
