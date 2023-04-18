@@ -16,14 +16,21 @@ class testMisArray {
 	@BeforeAll
 	void inicializar() {
 		array1 = new int[] {1,2,3,5};
-		array2 = new int[] {1,2,3,5,8};
-		array3 = new int[] {9,5,7,6,1,2,7,6};
+		array2 = new int[] {1,2,3,5,9};
+		array3 = new int[] {9,5,7,1,3,5};
 	}
 	@Test
 	void testMedia() {
 		assertEquals(MisArrays.media(array1),2.75);
-		assertEquals(MisArrays.media(array2),3.8);
-		assertEquals(MisArrays.media(array3),5.375);
+		assertEquals(MisArrays.media(array2),4);
+		assertEquals(MisArrays.media(array3),5);
+	}
+	
+	@Test
+	void testMediana() {
+		assertEquals(MisArrays.mediana(array1),2.5);
+		assertEquals(MisArrays.mediana(array2),3);
+		assertEquals(MisArrays.mediana(array3),4);
 	}
 
 }

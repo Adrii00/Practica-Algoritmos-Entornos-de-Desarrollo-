@@ -29,18 +29,22 @@ public abstract class MisArrays {
 		return suma/array.length;
 	}
 	/**
-	 * Metodo factorial que recibe por parametro un numero, y devuelve el factorial
-	 * de ese numero
-	 * 
-	 * @return el factorial de un numero
+	 * Metodo mediana que recibe por parametro un array, y devuelve la mediana de dicho array
+	 * @param un array de numeros enteros
+	 * @return la mediana de ese array
 	 */
 	
-	public static long factorial(int n) {
+	public static double mediana(int[] array) {
 		
-		int factorial = 1;
-		for (int x=2;x<=n;x++) factorial = factorial * x;
-		return factorial;
-		
+		double mediana;
+		int mitad = array.length / 2;
+		// Si la longitud es par, se debe poner la media de los dos centrales
+		if (array.length % 2 == 0) {
+		    mediana = (double)(array[mitad - 1] + array[mitad]) / 2;
+		} else {
+		    mediana = array[mitad];
+		}
+		return mediana;
 	}
 
 	/**
